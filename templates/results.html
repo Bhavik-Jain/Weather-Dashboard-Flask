@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div2">
+        <h3>Weather In {{ location }}</h3>
+        <h2>{{ temp }}° F</h2>
+        <h3>{{ weather }}</h3>
+        <h4>Feels Like : {{ feels_like }}° F</h4>
+    </div>
+</body>
+</html>
